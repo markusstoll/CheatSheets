@@ -8,7 +8,7 @@ openssl x509 -text -in <cert-file>
 #Decode a Certificate request
 
 ```
-openssl x509 -text -in <cert-file>
+openssl asn1parse -in <csr-file>
 ```
 
 
