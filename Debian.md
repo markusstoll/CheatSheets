@@ -3,7 +3,7 @@
 # Debug installing a package
 
 ```
-dpkg -D77777 --configure <package name>
+dpkg -D77777 --configure <package_name>
 ```
 
 
