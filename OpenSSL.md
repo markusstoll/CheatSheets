@@ -1,18 +1,21 @@
-#Debian releases
-
-Release Num | Name | Status
------------- | ------------- | ----
-9 | stretch | testing
-8 | jessie | stable
-6 | squeeze | 
-5 | lenny | 
-4 | etch | 
-
-
-# Debug installing a package
+#Decode a Certificate
 
 ```
-dpkg -D77777 --configure <package_name>
+openssl x509 -text -in <cert-file>
+```
+
+
+#Decode a Certificate request
+
+```
+openssl x509 -text -in <cert-file>
+```
+
+
+#Decode a Certificate
+
+```
+openssl x509 -text -in <cert-file>
 ```
 
 
