@@ -1,12 +1,29 @@
+#Debian releases
 
-Congratulations, you've successfully created a SparkleShare repository!
+# Debug installing a package
 
-Any files you add or change in this folder will be automatically synced to 
-ssh://git@github.com/markusstoll/CheatSheets.git and everyone connected to it.
+This config has support for [tmux-mem-cpu-load](http://github.com/thewtex/tmux-mem-cpu-load).
 
-SparkleShare is an Open Source software program that helps people collaborate and 
-share files. If you like what we do, consider buying us a beer: http://www.sparkleshare.org/
+Prefix mapped to Ctrl-A for `screen` users.
 
-Have fun! :)
+Installation
+------------
+
+  Download:
+
+```bash
+git clone https://github.com/tony/tmux-config.git ~/.tmux
+```
+
+  Copy tmux config to home:
+
+```bash
+ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
+```
+
+  Go to config dir:
+
+```bash
+cd ~/.tmux
 
 
