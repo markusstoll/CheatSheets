@@ -17,7 +17,7 @@ openssl rsa -text -in <key-file>
 ```
 
 
-Debugging proxy for encrypted network traffic
+Debugging proxeis for encrypted network traffic
 --------
 * Fiddler
 * Charlse
