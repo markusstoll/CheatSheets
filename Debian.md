@@ -1,4 +1,4 @@
-#Debian releases
+####Debian releases
 
 Release Num | Name | Status
 ------------ | ------------- | ----
@@ -9,7 +9,7 @@ Release Num | Name | Status
 4 | etch | 
 
 
-# Debug installing a package
+#### Debug installing a package
 
 ```
 dpkg -D77777 --configure <package_name>
