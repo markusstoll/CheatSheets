@@ -1,3 +1,4 @@
+
 Congratulations, you've successfully created a SparkleShare repository!
 
 Any files you add or change in this folder will be automatically synced to 
@@ -7,3 +8,5 @@ SparkleShare is an Open Source software program that helps people collaborate an
 share files. If you like what we do, consider buying us a beer: http://www.sparkleshare.org/
 
 Have fun! :)
+
+
