@@ -1,6 +1,6 @@
 ####Rename / Copy files
 ```
-openssl x509 -text -in <cert-file>
+for i in *ie8.css; { cp $i  ${i%ie8.css}ie7.css; }
 ```
 
 
