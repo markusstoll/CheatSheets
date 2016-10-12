@@ -169,7 +169,7 @@ For example, we can use "w" to jump to the next word and "b" to jump back one wo
 * [How to reorder windows](http://superuser.com/questions/343572/tmux-how-do-i-reorder-my-windows)
 
 ## Notes
-thanks to 
+thanks to MohamedAlaa / tmux-cheatsheet.markdown
 
 
 
