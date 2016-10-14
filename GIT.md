@@ -37,7 +37,7 @@
 
 
 
-**brenching**
+**branching**
 
 	git remote show origin                             #lista sve remote brencheve
 	git checkout -b [brench_name]					   #pravi novi brench i prelazi u taj brench
