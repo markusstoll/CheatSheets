@@ -4,20 +4,21 @@
 
 **Create - from existing data**
 
-cd ~/my_project_directory
-git init
-git add . 
+	cd ~/my_project_directory
+	git init
+	git add . 
 
 
 
 **Clone**
 
 	git clone ~/existing_repo ~/new/repo
-	git clone git://host.org/project.git
+
+	git clone [url]                                      #clone in new folder (url)
+	git clone git://host.org/project.git                 #clone into new folder 'project'
 	git clone ssh://user@host.org/project.git
 	
-	git clone [url]                                      #klonira ceo projekat, pulluje najnoviju verziju u folder tog projekta (stoji na kraju url-a)
-	git clone [url] myFolder                             #klonira ceo projekat u myFolder
+	git clone [url] myFolder                             #clone into myFolder
 	
  	
 
