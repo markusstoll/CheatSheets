@@ -26,7 +26,7 @@
 
 	git add .                                            #add all current changes
  	git add -v                                           #verbose
- 	git add . -u 										 #dodaj sve izmenjene fajlove sem untrekovanih
+ 	git add . -u 					                           #update from all changes
 
 
 **Fetch && Pull**
