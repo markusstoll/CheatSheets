@@ -4,9 +4,9 @@
 
 **Create - from existing data**
 
-	cd ~/my_project_directory
-	git init
-	git add . 
+cd ~/my_project_directory
+git init
+git add . 
 
 
 
