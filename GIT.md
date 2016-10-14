@@ -1,125 +1,121 @@
-**CheatSheat for GIT**
+** CheatSheat für GIT **
 
 
 
-**Create - from existing data**
+** Erstellen - aus vorhandenen Daten **
 
-	cd ~/my_project_directory
-	git init
-	git add . 
-
-
-
-**Clone**
-
-	git clone ~/existing_repo ~/new/repo
-
-	git clone [url]                                      #clone in new folder (url)
-	git clone git://host.org/project.git                 #clone into new folder 'project'
-	git clone ssh://user@host.org/project.git
-	
-	git clone [url] myFolder                             #clone into myFolder
-	
- 	
-
-**Add**
-
-	git add .                                            #add all current changes
- 	git add -v                                           #verbose
- 	git add . -u 					                           #update from all changes
-
-
-**Fetch && Pull**
-
-	git fetch                                          #povlaci sve brencheve i/ili tagove (zajedno cine "refs"), apdejtuje sve trekovane brencheve
-	git pull                                           #povlaci sve izmene sa remote repozitorijuma u moj trenutni brench
-	git pull origin/[brench_name]                      #povlaci sve izmene sa remote brencha u odredjeni lokalni brench
+cd ~ / my_project_directory
+git init
+git add.
 
 
 
-**branching**
+** ** Clone
 
-	git remote show origin                             #lista sve remote brencheve
-	git checkout -b [brench_name]					   #pravi novi brench i prelazi u taj brench
-	git brench                                         #pokazuje trenutni brench
-	git brench -v                                      #pokazuje zadnji komit na trenutnom brenchu     
-	git brench --all                                   #lista sve brench-ove (lokalno i remote)
-	git push origin [brench_name]                  	   #pushuje lokalni brench na origin remote server
-	git push origin --delete [brench_name]    		   #brise brench sa remote servera
-	git brench -d [brench_name]                        #brise brench lokalno
-	git brench --merged                                #pokazuje brench-ove koji su merged
-	git brench --no-merged                             #pokazuje brench-ove koji jos nisu merged
+git clone ~ / ~ existing_repo / new / repos
 
-**Merging**
+git clone [url] und #clone neuen Ordner (url)
+git clone git: //host.org/project.git #clone in neuen Ordner "Projekt"
+git clone ssh: //user@host.org/project.git
 
-	git checkout master 							   #prelazim u master brench
-	git merge [brench_name]                            #merge-ujem [brench_name] sa masterom
-	git merge origin/development					   #merge-uje devel sa masterom
+git clone [url] #clone in MyFolder MyFolder
 
-**Status**
+ 
+
+** ** Hinzufügen
+
+git add. #add alle aktuellen Änderungen
+ git add -v #verbose
+ git add. -u #update von allen Änderungen
 
 
-	git status                                         #lista fajlove koji nisu merged
-	git status -uno                                    #ne prikazuje untracked fajlove (git status --untracked-files=no)
-	git log                                            #lista komitova
-	git ls-files . 									   #lista sve fajlove u repou
-	git ls-files . --ignored --exclude-standard --others	#lista git-ignored fajlove
-	git ls-files . --exclude-standard --others		   #lista untrekovane fajlove
-	git clean -fd                                      #brise untracked fajlove
+Fetch Ziehen ** && **
 
-
-**Undo**
-
-	git reset										   #undo posle git add .
-	git reset --soft HEAD^							   #undo posle git commit -m 'update'
-	git reset HEAD [file_name]                         #undo posle git add [file_name] - undo posle dodavanja jednog fajla
-	git checkout -- [file_name]                        #diskarduje izmene u jednom fajlu 
-	git checkout -- . 								   #diskarduje izmene u svim fajlovima
-	git revert b53b3c796b6fdd3e7a02e		           #revert komit - vraca komit koji je greskom otisao (list svih komitova git log)
-
-
-**Diff**
-
-	git diff --name-only --diff-filter=U 			   #lista sve fajlove koji imaju konflikte posle stash-a
-	git diff master master/origin                      #razlike izmedju lokalnog mastera i origin mastera
-	git log --graph  --decorate                        #graph brenchova i komitova
-	git diff [brench_name] [brench_name]               #razlike izmedju dva brencha
-	git diff --name-only  [brench_name] [brench_name]  #razlike izmedju dva brencha samo fajlovi
-	git diff [local_brench] [origin/remote_brench]     #razlika izmedju lokalnog i remote brench-a
-	git log --oneline [brench_name] ^master   		   #razlika komitova izmedju dva brench-a
-	git log --oneline [brench_name]..master            #isto sto i iznad
-	git diff -R                                        #diff reverzno
-    
-
-**Stash**
-
-	git stash                                          #sacuva sve izmene i vraca u najnoviju komitovanu verziju
-	git stash save "Poruka"                            #isto sto i ovo gore samo sa deskriptivnom porukom
-	git stash list                                     #lista sve stash 
-	git stash apply stash@{0}                          #vraca stash@{0}
-	git stash drop stash@{0}                           #brise odredjeni stash, (kad ni jedan nije zadat brise zadnji)
-	git stash show -p stash@{0}						   #prikazuje sta je u stash-u
-    git diff stash@{0}  							   #razlike u stashu
-
-
-**gitignore**											#dodavanje gitignore fajla posle komita
-
-	git rm -r --cached .
-	git add .
-	git commit -m ".gitignore is now working"
-
-
-**Remove files from repo**
-
-	git rm --cached [file_name]						   #brise fajl iz repozitorijuma, ne i fizicki
-	git rm --cached -r [dir_name]					   #brise direktorijum iz repozitorijuma, ne i fizicki
-
-
-**Tags**
-
-	git tag Release-0.0.1 -m "Release of Software on May 22"                #dodaje odredjeni tag 
-	git push origin Release-0.0.1                                           #pushuje odredjeni tag na origin remote
+git holen #povlaci alle Brench und / oder Tags (entlang cine "Refs") apdejtuje alle trekovane Brench
+Git-Pull-#povlaci alle Änderungen an der Remote-Repository in meinem derzeitigen brench
+git pull origin / [brench_name] Änderungen an der Fernbedienung Brench in bestimmten lokalen brench #povlaci
 
 
 
+** ** Branching
 
+git remote zeigen Ursprung #list alle Fern Brench
+git checkout -b [brench_name] #pravi neue brench und gelangt in den brench
+git brench #pokazuje aktuellen brench
+git brench -v #pokazuje KoMiT zuletzt die aktuelle Brench
+git brench --alle #list alle brench (lokalen und remote)
+git push origin [brench_name] #pushuje lokalen brench der Ursprung Remote-Server
+git push origin --delete [brench_name] #brise brench mit einem Remote-Server
+git brench -d [brench_name] #brise lokale brench
+git brench --merged #pokazuje brench ist, die zusammengeführt werden
+git brench --no-fusionierten #pokazuje brench die, die noch nicht verschmolzen
+
+Merging ** **
+
+git checkout master #prelazim den Master brench
+git merge [brench_name] # merge-mate [brench_name] mit einem Master
+git merge origin / Entwicklung uje # merge-devel mit dem Master
+
+** Der Status **
+
+
+git status #list Dateien, die nicht zusammengeführt werden
+git status -UNO #Ich zeigt untracked Dateien (git status --untracked-files = no)
+git log #list KoMiT
+git ls-Dateien. #list alle Dateien in repou
+git ls-Dateien. --ignored --exclude-Standard --others #list git-Dateien ignoriert
+git ls-Dateien. --exclude-Standard --others #list untrekovane Dateien
+git sauber -FD #brise untracked Dateien
+
+
+Rückgängig ** **
+
+git reset #undo nach git add.
+git reset HEAD ^ --soft #undo nach git commit -m 'update'
+git reset HEAD [Dateiname] #undo nach git add [file_name] - rückgängig machen, nachdem eine Datei hinzufügen
+git checkout - [Dateiname] #diskarduje Änderungen in einer Datei
+git checkout -. #diskarduje Änderungen auf alle Dateien
+git revert b53b3c796b6fdd3e7a02e #revert KoMiT - kehrt KoMiT die fälschlicherweise ging (Liste aller KoMiT git log)
+
+
+** ** Diff
+
+git diff --name-only --diff-filter = U #list alle Dateien, die Konflikte nach dem Stash-a haben
+git diff Master Master / Herkunft #razlike zwischen Master und lokaler Herkunft Master
+git log --graph --decorate #graph Brench und Ausschüsse
+git diff [brench_name] [brench_name] #razlike zwischen zwei Brench
+git diff --name-only [brench_name] [brench_name] #razlike zwischen zwei Brench nur Dateien
+git diff [local_brench] [Herkunft / remote_brench] #razlika zwischen lokalen und entfernten brench des
+git log --oneline [brench_name] ^ Master #razlika KoMiT zwischen zwei brench des
+git log --oneline [brench_name] .. Master #isto hundert oben
+git diff -R Reverse #diff
+    
+
+** ** Stash
+
+git stash #sacuva alle Änderungen und kehrt auf die neueste Version komitovanu
+git stash save "Nachricht" #isto hundert und oben ist nur beschreibende Nachricht
+git stash Liste bunkern alle #list
+git stash gelten Stash @ {0} #vraca Stash @ {0}
+git stash Tropfen Stash @ {0} #brise bestimmte Stash (wenn niemand dort nicht den letzten Tupfer ist)
+git stash Show -p Stash @ {0} #prikazuje im Versteck sind in
+    git diff Stash @ {0} #razlike der Stash
+
+
+** ** Gitignore #dodavanje gitignore Datei nach Komita
+
+git rm -r --cached.
+git add.
+git commit -m ".gitignore arbeitet nun"
+
+
+** Entfernen von Dateien aus Repo **
+
+git rm --cached [Dateiname] #brise Datei aus dem Repository, nicht die physische
+git rm -r --cached [DIR_NAME] #brise Verzeichnis im Repository, nicht die physische
+
+
+** Umbauten **
+
+git tag Veröffentlichungs-0.0.1 -m "Veröffentlichung von Software am 22. Mai" #add bestimmten Tag
+git push origin-Freigabe 0.0.1 #pushuje bestimmten Tag auf den Ursprung Fern
