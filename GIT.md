@@ -24,8 +24,8 @@
 
 **Add**
 
-	git add .                                            #dodaje sve fajlove
- 	git add -v 										     #verbose
+	git add .                                            #add all current changes
+ 	git add -v                                           #verbose
  	git add . -u 										 #dodaj sve izmenjene fajlove sem untrekovanih
 
 
