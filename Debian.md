@@ -4,6 +4,7 @@ Release Num | Name | Status
 ------------ | ------------- | ----
 9 | stretch | testing
 8 | jessie | stable
+7 | wheezy |
 6 | squeeze | 
 5 | lenny | 
 4 | etch | 
