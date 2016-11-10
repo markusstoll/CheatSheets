@@ -1,6 +1,6 @@
 #### LDAPSearch
 ```
-for i in *ie8.css; { cp $i  ${i%ie8.css}ie7.css; }
+ldapsearch -h eros -D "uid=mstoll,cn=users,dc=eros,dc=stgt,dc=junidas,dc=de" -W -b "dc=eros,dc=stgt,dc=junidas,dc=de" uid=jcola
 ```
 
 
