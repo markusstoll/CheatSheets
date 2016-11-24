@@ -1,5 +1,6 @@
 ####SQL
 
+Order by some kriterium and update column
 ```
 merge into TABLEA ta
 using
