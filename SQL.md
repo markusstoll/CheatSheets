@@ -1,14 +1,16 @@
 ####SQL
 
 ```
-merge into TABLEA t
+merge into TABLEA ta
 using
 (
-   select id, rownumber() over() AS position from "KUNITAUSER"."K_UNTERANLIEGEN" uat where uat.anliegenid = 17 order by uat.angezeigtername
-) as ua2
-  ON ua.id = ua2.id
+   select id, rownumber() AS position from TABLEA t2
+    where <filter>
+    order by t2.<order>
+) as ta2
+  ON ta.id = ta2.id
   WHEN MATCHED THEN UPDATE SET
-    ua.position = ua2.position;
+    ta.position = ta2.position;
 ```
 
 
