@@ -2,8 +2,9 @@
 
 Release Num | Name | Status
 ------------ | ------------- | ----
-9 | stretch | testing
-8 | jessie | stable
+10 | buster | testing
+9 | stretch | stable
+8 | jessie | 
 7 | wheezy |
 6 | squeeze | 
 5 | lenny | 
