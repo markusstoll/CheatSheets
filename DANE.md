@@ -1,14 +1,18 @@
+### Hash of public key
+
 #### Create TLSA Hash
 ```
 openssl x509 -in <zert> -pubkey -noout | openssl pkey -pubin -outform DER | openssl sha256
 ```
 
-#### Decode a Certificate request
+#### TSLA Entry
 ```
-openssl asn1parse -in <csr-file>
+(2|3) 1 1 <HASH>
 ```
 
-####Decode a key file
+### Create TLSA Hash
+
+#### Decode a key file
 ```
 openssl rsa -text -in <key-file>
 ```
