@@ -11,16 +11,16 @@ openssl x509 -in <zert> -pubkey -noout | openssl pkey -pubin -outform DER | open
 ```
 
 ### Create TLSA Hash
-
-#### Decode a key file
 ```
-openssl rsa -text -in <key-file>
+openssl x509 -in <Zertifikatsdatei> -outform DER | openssl <sha256|sha512
 ```
 
+#### TSLA Entry
+```
+(2|3) 0 1 <HASH>
+```
 
-####Debugging proxies for encrypted network traffic
-* Fiddler
-* Charlse
-* burpsuite
+### TSLA paras
+#### field one
 
 
