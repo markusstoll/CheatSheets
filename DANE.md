@@ -21,6 +21,8 @@ openssl x509 -in <Zertifikatsdatei> -outform DER | openssl <sha256|sha512
 ```
 
 ### TSLA paras
-#### field one
+
+see https://www.core-networks.de/faq/tlsa-record.html
+
 
 
