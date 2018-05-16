@@ -1,9 +1,9 @@
-####Decode a Certificate
+#### Create TLSA Hash
 ```
-openssl x509 -text -in <cert-file>
+openssl x509 -in <zert> -pubkey -noout | openssl pkey -pubin -outform DER | openssl sha256
 ```
 
-####Decode a Certificate request
+#### Decode a Certificate request
 ```
 openssl asn1parse -in <csr-file>
 ```
