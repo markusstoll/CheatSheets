@@ -20,9 +20,12 @@ openssl x509 -in <Zertifikatsdatei> -outform DER | openssl <sha256|sha512
 (2|3) 0 1 <HASH>
 ```
 
-### TSLA paras
+### TSLA Docs
 
 see https://www.core-networks.de/faq/tlsa-record.html
 
+TLSA record gen:
+https://www.huque.com/bin/gen_tlsa
+  
 
 
