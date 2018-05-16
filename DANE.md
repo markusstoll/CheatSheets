@@ -27,5 +27,7 @@ see https://www.core-networks.de/faq/tlsa-record.html
 TLSA record gen:
 https://www.huque.com/bin/gen_tlsa
   
+checking records 
+https://blog.onefellow.com/post/163981196388/verify-tlsa-dane-records-using-openssl
 
 
