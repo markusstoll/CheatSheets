@@ -2,7 +2,8 @@
 
 Release Num | Name | Status
 ------------ | ------------- | ----
-10 | buster | testing
+11 |bullseye | testing
+10 | buster | stable
 9 | stretch | stable
 8 | jessie | 
 7 | wheezy |
