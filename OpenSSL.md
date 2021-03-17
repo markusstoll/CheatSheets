@@ -20,7 +20,7 @@ openssl rsa -text -in <key-file>
 
 ####Check passwd hash (e. g. from /etc/shadow)
 ```
-openssl passwd -6 -salt
+openssl passwd -6 -salt <salt>
 ```
 
 ####Debugging proxies for encrypted network traffic
