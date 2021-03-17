@@ -20,7 +20,7 @@ openssl rsa -text -in <key-file>
 
 ####Check passwd hash (e. g. from /etc/shadow)
 ```
-(echo -ne "GET / HTTP/1.0\r\nHost: <hostname>\r\n\r\n"; cat) | openssl s_client -connect <hostname>:443 -servername <hostname>
+openssl passwd -6 -salt
 ```
 
 ####Debugging proxies for encrypted network traffic
